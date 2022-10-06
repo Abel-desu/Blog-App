@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateLikes < ActiveRecord::Migration[7.0]
+class CreateLikes < ActiveRecord::Migration[7.0] # rubocop:todo Style/Documentation
   def change
     create_table :likes do |t|
       t.integer :authorId
