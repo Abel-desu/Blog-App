@@ -1,9 +1,7 @@
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Blog-App
 > This is Ruby on the Rail project which have data modeling from ERD and migrating data.
-
 ## Built With
 
 - Ruby
@@ -20,10 +18,7 @@
 - [Download the ZIP file from this location](https://github.com/Abel-desu/Blog-App/archive/refs/heads/dev.zip) or run the following [git](https://git-scm.com/) command to clone the files to your machine:
 
 ```
-
-git clone https://github.com/Abel-desu/Blog-App.git
-
-
+git clone https://github.com/https://github.com/Abel-desu/Blog-App.git
 ```
 - Once the files are on your machine, open the **Blog-App* folder in [Visual Studio Code](https://code.visualstudio.com/download)
 
@@ -67,5 +62,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-
