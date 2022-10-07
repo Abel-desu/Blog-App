@@ -2,7 +2,6 @@
 
 # Blog-App
 > This is Ruby on the Rail project which have data modeling from ERD and migrating data.
-
 ## Built With
 
 - Ruby

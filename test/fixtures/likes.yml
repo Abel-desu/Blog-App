@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  AuthorId: 1
+  PostId: 1
+  CreatedAT: one
+  UpdateAt: one
+
+two:
+  AuthorId: 1
+  PostId: 1
+  CreatedAT: two
+  UpdateAt: two
