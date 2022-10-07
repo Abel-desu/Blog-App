@@ -23,7 +23,6 @@
 
 git clone https://github.com/Abel-desu/Blog-App.git
 
-git clone https://github.com/Abel-desu/Blog-App.git
 
 ```
 - Once the files are on your machine, open the **Blog-App* folder in [Visual Studio Code](https://code.visualstudio.com/download)
