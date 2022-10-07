@@ -1,4 +1,4 @@
 class Like < ApplicationRecord
-  belongs_to :CreatedAT
-  belongs_to :UpdateAt
+  belongs_to :author, class_name: 'User'
+  belongs_to :post
 end
