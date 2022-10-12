@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 
+
     has_many :posts, foreign_key: :author_id, dependent: :destroy
     has_many :comments, foreign_key: :author_id, dependent: :destroy
     has_many :likes, foreign_key: :author_id, dependent: :destroy
@@ -14,7 +15,4 @@ class User < ApplicationRecord
     
   end
   
-<<<<<<< HEAD
 
-=======
->>>>>>> dda5a04c53ef2f847d7cd1327b3d8a028e0dae7b
