@@ -33,5 +33,5 @@ RSpec.describe 'Posts', type: :request do
       get '/users/1/posts/1'
       expect(response.body).to include('here is the post with id 1')
     end
-  end 
+  end
 end

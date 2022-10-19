@@ -28,7 +28,5 @@ RSpec.describe 'Users', type: :request do
       get '/users/show'
       expect(response).to render_template('show')
     end
-
-   
   end
 end
