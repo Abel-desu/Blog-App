@@ -3,12 +3,17 @@
 # root "articles#index"
 Rails.application.routes.draw do
   devise_for :users
+
   root to: 'users#index'
 
   resources :users, only: %i[index show] do
     resources :posts, only: %i[index show new create] do
-      resources :comments, only: %i[create new]
-      resources :likes, only: [:create]
+      resources :comments
+      resources :likes
     end
   end
+
+  delete 'users/:user_id/posts/:id', to: 'posts#destroy'
+  get 'users/:user_id/posts/:post_id/comments/:id', to: 'comments#show'
+  delete '/users/:user_id/posts/:post_id/comments/:id', to: 'comments#destroy'
 end

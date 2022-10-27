@@ -11,7 +11,7 @@ class User < ApplicationRecord
   validates :name, presence: true, allow_blank: false
   validates :posts_counter, numericality: { greater_than_or_equal_to: 0 }
 
-  def recent_3_posts
-    posts.limit(3).order(created_at: :desc)
+  def most_recent_post
+    posts.order(created_at: :desc).limit(3)
   end
 end
