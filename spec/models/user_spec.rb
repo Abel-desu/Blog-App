@@ -36,12 +36,12 @@ RSpec.describe User, type: :model do
   end
 
   it 'posts_counter should be integer' do
-    @user.postsCounter = 'one'
+    @user.posts_counter = 'one'
     expect(@user).to_not be_valid
   end
 
   it 'posts_counter should be greater than or equal to 0' do
-    @user.postsCounter = -1
+    @user.posts_counter = -1
     expect(@user).to_not be_valid
   end
 end
