@@ -14,19 +14,14 @@ RSpec.describe 'Users', type: :request do
 
     it 'show correct content' do
       get '/users#index'
-      expect(response.body).to include('Users')
+      expect(response.body).to include('users')
     end
   end
 
   describe 'GET /show' do
     it 'returns http success' do
-      get '/users/show'
+      get '/users#show'
       expect(response).to have_http_status(:success)
-    end
-
-    it 'renders the show template' do
-      get '/users/show'
-      expect(response).to render_template('show')
     end
   end
 end
