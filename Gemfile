@@ -26,11 +26,11 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
+gem 'bcrypt', '~> 3.1.7'
 gem 'jbuilder'
-
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
-
+gem 'rswag'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -41,7 +41,6 @@ gem 'jit_preloader'
 gem 'cancancan'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 gem 'bullet'
@@ -58,6 +57,8 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rails-controller-testing'
   gem 'rspec-rails', '>= 3.11.0'
+  gem 'rswag-api'
+  gem 'rswag-ui'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
