@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 # rubocop:disable Metrics/BlockLength
-ActiveRecord::Schema[7.0].define(version: 20_221_027_114_306) do
+ActiveRecord::Schema[7.0].define(version: 20_221_027_114_309) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -51,6 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 20_221_027_114_306) do
     t.integer 'posts_counter', default: 0
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
+    t.string 'role'
     t.string 'email', default: '', null: false
     t.string 'encrypted_password', default: '', null: false
     t.string 'reset_password_token'
