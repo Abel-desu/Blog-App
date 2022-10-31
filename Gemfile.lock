@@ -120,6 +120,8 @@ GEM
     jit_preloader (2.0.0)
       activerecord (>= 7, < 8)
       activesupport
+    json-schema (3.0.0)
+      addressable (>= 2.8)
     launchy (2.5.0)
       addressable (~> 2.7)
     letter_opener (1.8.1)
@@ -211,6 +213,20 @@ GEM
       rspec-mocks (~> 3.11)
       rspec-support (~> 3.11)
     rspec-support (3.12.0)
+    rswag (2.7.0)
+      rswag-api (= 2.7.0)
+      rswag-specs (= 2.7.0)
+      rswag-ui (= 2.7.0)
+    rswag-api (2.7.0)
+      railties (>= 3.1, < 7.1)
+    rswag-specs (2.7.0)
+      activesupport (>= 3.1, < 7.1)
+      json-schema (>= 2.2, < 4.0)
+      railties (>= 3.1, < 7.1)
+      rspec-core (>= 2.14)
+    rswag-ui (2.7.0)
+      actionpack (>= 3.1, < 7.1)
+      railties (>= 3.1, < 7.1)
     ruby-vips (2.1.4)
       ffi (~> 1.12)
     rubyzip (2.3.2)
@@ -262,6 +278,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap
   bullet
   cancancan
@@ -279,6 +296,9 @@ DEPENDENCIES
   rails (~> 7.0.4)
   rails-controller-testing
   rspec-rails (>= 3.11.0)
+  rswag
+  rswag-api
+  rswag-ui
   selenium-webdriver
   sprockets-rails
   stimulus-rails
